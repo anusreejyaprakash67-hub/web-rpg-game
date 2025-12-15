@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web RPG Game - Fantasy Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer" class="game-container">
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+        <div id="ui" class="ui-panel">
+            <div id="playerStats" class="stats-panel">
+                <h3>Player Stats</h3>
+                <p>Name: <span id="playerName">Adventurer</span></p>
+                <p>HP: <span id="playerHP">100</span>/<span id="playerMaxHP">100</span></p>
+                <p>Mana: <span id="playerMana">50</span>/<span id="playerMaxMana">50</span></p>
+                <p>Level: <span id="playerLevel">1</span></p>
+                <p>EXP: <span id="playerEXP">0</span>/<span id="playerMaxEXP">100</span></p>
+            </div>
+            <div id="inventory" class="inventory-panel">
+                <h3>Inventory</h3>
+                <div id="inventoryList" class="inventory-list"></div>
+            </div>
+            <div id="questLog" class="quest-panel">
+                <h3>Active Quests</h3>
+                <div id="questList" class="quest-list"></div>
+            </div>
+            <div id="chatBox" class="chat-box">
+                <div id="messages" class="messages"></div>
+                <input type="text" id="commandInput" placeholder="Type command..." />
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
